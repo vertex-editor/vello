@@ -777,7 +777,7 @@ impl ColorPainter for DrawColorGlyphs<'_> {
 
     fn push_clip_glyph(&mut self, glyph_id: GlyphId) {
         let Some(outline) = self.outlines.get(glyph_id) else {
-            eprintln!("Didn't get expected outline");
+            tracing::warn!(?glyph_id, "didn't get expected outline");
             return;
         };
 
@@ -859,7 +859,7 @@ impl ColorPainter for DrawColorGlyphs<'_> {
         brush: skrifa::color::Brush<'_>,
     ) {
         let Some(outline) = self.outlines.get(glyph_id) else {
-            eprintln!("Didn't get expected outline");
+            tracing::warn!(?glyph_id, "didn't get expected outline");
             return;
         };
 

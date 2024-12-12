@@ -2493,6 +2493,7 @@ dependencies = [
  "skrifa",
  "static_assertions",
  "thiserror 2.0.3",
+ "tracing",
  "vello_encoding",
  "vello_shaders",
  "wgpu",

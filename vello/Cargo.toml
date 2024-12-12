@@ -45,6 +45,7 @@ workspace = true
 vello_encoding = { workspace = true }
 vello_shaders = { workspace = true, optional = true }
 bytemuck = { workspace = true }
+tracing = { workspace = true }
 skrifa = { workspace = true }
 peniko = { workspace = true }
 wgpu = { workspace = true, optional = true }
